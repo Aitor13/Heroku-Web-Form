@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/normalize.csss">
+    <link rel="stylesheet" href="../static/css/normalize.css">
     <link rel="stylesheet" href="../static/css/styles.css">
     <title>Restaurantes</title>
 </head>
@@ -11,10 +11,14 @@
     <h1>Restaurantes guardados</h1> 
     <ul>
         {% for c in restaurantes %}
-        <li><b>Nombre:</b> {{c.nombre}}
-            <p><b>Calle:</b> {{c.calle}}</p>
-            <p><b>Comida:</b> {{c.comida}}</p>
-        </li>
+        <form action="" method="POST">
+            <li><b>Nombre:</b> {{c.nombre}}
+                <input type="hidden" name = "id" value="{{c.id}}">
+                <p><b>Calle:</b> {{c.calle}}</p>
+                <p><b>Comida:</b> {{c.comida}}</p>
+                <input id="eliminar" type="submit" value="Eliminar">
+            </li>
+        </form>
         {% endfor %}
     </ul>
 </body>
