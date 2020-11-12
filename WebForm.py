@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 # Hecho el deployment en Heroku
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://tcncwrqssasksf:34dd1a83e2c1f46c16647da84db10691f049fe432ddf7c0a9d99c3be110727ac@ec2-34-251-118-151.eu-west-1.compute.amazonaws.com/d2qkutr0arlq2g'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://iaqqdvxpnhqdll:46956044fea8c1dec1cac0dd6d0ce42af51a3e5c21e9d1be799ca8ea0de7e322@ec2-52-211-108-161.eu-west-1.compute.amazonaws.com:5432/d77mdr2d7sbtun'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 CORS(app)
 
