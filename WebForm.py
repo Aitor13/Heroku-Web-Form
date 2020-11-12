@@ -48,6 +48,12 @@ def indice():
         mensaje = 'Registro insertado con éxito!'
     return render_template('indice.html',mensaje=mensaje)
 
+# Solicitar toda la lista de restaurantes
+@app.route('/restaurantes')
+def get_restaurantes():
+    restaurantes = Restaurante.query.all()
+    return render_template('restaurantes.html',restaurantes=restaurantes)
+
 
 if __name__ == '__main__':
     app.run(port=2000)
