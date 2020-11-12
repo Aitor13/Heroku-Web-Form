@@ -1,1 +1,1 @@
-web: gunicorn API_REST:app
+web: gunicorn WebForm:app
