@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/normalize.csss">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Restaurantes</title>
+</head>
+<body>
+    <h1>Restaurantes guardados</h1> 
+    <ul>
+        {% for c in restaurantes %}
+        <li><b>Nombre:</b> {{c.nombre}}
+            <p><b>Calle:</b> {{c.calle}}</p>
+            <p><b>Comida:</b> {{c.comida}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

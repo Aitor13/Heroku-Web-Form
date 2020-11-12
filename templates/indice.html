@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Form Restaurantes</title>
+</head>
+<body>
+    <h1>Guarda tus restaurantes favoritos</h1>
+    <form action="" method="POST" >
+        <input type="text" name='nombre' placeholder="nombre">
+        <input type="text" name='calle' placeholder="calle">
+        <input type="text" name="comida" placeholder="comida">
+        <input type="submit" label="Enviar">
+    </form>
+    <p>{{mensaje}}</p>
+    <a href="{{url_for('get_restaurantes')}}">Mostrar todos los restaurantes guardados</a>
+</body>
+</html>
