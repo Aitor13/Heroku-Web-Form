@@ -37,8 +37,8 @@ esquemas = schema(many=True)
 @app.route('/',methods=['POST', 'GET'])
 @app.route('/indice', methods=['POST', 'GET'])
 def indice():
-    mensaje = ''
     if request.method == 'POST':
+        mensaje = ''
         nombre = request.form['nombre']
         calle = request.form['calle']
         comida = request.form['comida']
