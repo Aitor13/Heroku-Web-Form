@@ -11,7 +11,7 @@
     <h1>Restaurantes guardados</h1> 
     <ul>
         {% for c in restaurantes %}
-        <form action="" method="POST">
+        <form action="" method="POST" class="formularios">
             <li><b>Nombre:</b> {{c.nombre}}
                 <input type="hidden" name = "id" value="{{c.id}}">
                 <p><b>Calle:</b> {{c.calle}}</p>
