@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
     <link rel="stylesheet" href="../static/css/styles.css">
     <title>Restaurantes</title>
 </head>
+
 <body>
-    <h1>Restaurantes guardados</h1> 
-    <ul>
-        {% for c in restaurantes %}
-        <form action="" method="POST" class="formularios">
-            <li><b>Nombre:</b> {{c.nombre}}
-                <input type="hidden" name = "id" value="{{c.id}}">
-                <p><b>Calle:</b> {{c.calle}}</p>
-                <p><b>Comida:</b> {{c.comida}}</p>
-                <input id="eliminar" type="submit" value="Eliminar">
-            </li>
-        </form>
-        {% endfor %}
-    </ul>
+    <h1>Restaurantes guardados</h1>
+    <div class="elemento">
+        <ul>
+            {% for c in restaurantes %}
+            <form action="" method="POST" class="formularios">
+                <li><b>Nombre:</b> {{c.nombre}}
+                    <input type="hidden" name="id" value="{{c.id}}">
+                    <p><b>Calle:</b> {{c.calle}}</p>
+                    <p><b>Comida:</b> {{c.comida}}</p>
+                    <input id="eliminar" type="submit" value="Eliminar">
+                </li>
+            </form>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
+
 </html>
