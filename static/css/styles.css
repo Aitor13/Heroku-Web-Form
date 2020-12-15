@@ -21,7 +21,7 @@ input#eliminar{
 }
 
 li{
-    margin: 20px 20px 20px 25px;
+    margin: 20px 20px 20px 29px;
 }
 ul{
     border:1px solid blue;
@@ -30,11 +30,10 @@ ul{
     width: 205px;
     height: 180px;
     padding: 5px 5px;  
-    margin:10px;
+    margin:12px;
 }
-.elemento{
-    margin:20px;
-}
+
 div.elemento{
     position: relative;
+    margin: 20px;
 }
